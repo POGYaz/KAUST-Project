@@ -31,6 +31,7 @@ Jarir-Project/
 │   ├── models/       # Model training, inference, and evaluation
 │   ├── evaluation/   # Model evaluation and KPI scripts
 │   └── utils/        # Utility functions and helpers
+├── reports/      # Generated reports, figures, and documentation outputs
 ├── tests/        # Unit and integration tests
 ├── requirements.txt  # Python dependencies
 ├── README.md         # Project overview and instructions
@@ -41,6 +42,7 @@ Jarir-Project/
 - **data/**: Central location for all data files used in the project.
 - **notebooks/**: Jupyter notebooks for EDA, prototyping, and visualization.
 - **src/**: All source code, organized by function (ingestion, features, models, evaluation, utils).
+- **reports/**: Generated reports, figures, and documentation outputs.
 - **tests/**: Unit and integration tests to ensure code correctness.
 - **requirements.txt**: Python dependencies.
 - **README.md**: Project overview, setup instructions, and documentation.

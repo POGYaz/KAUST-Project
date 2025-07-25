@@ -1,0 +1,801 @@
+CustomerID,Business_Category,Business_Size,Customer_Since
+B2B-2013,Legal Services,Medium,2023-01-26
+B2B-2310,Tech Startup,Medium,2022-03-08
+B2B-2782,Tech Startup,Small,2023-09-01
+B2B-2215,Consulting,Small,2022-10-27
+B2B-2436,Education,Small,2022-06-24
+B2B-2648,Education,Small,2023-09-08
+B2B-2298,Legal Services,Small,2022-09-23
+B2B-2163,Tech Startup,Small,2022-09-12
+B2B-2679,Consulting,Small,2022-06-25
+B2B-2287,Education,Medium,2022-12-22
+B2B-2120,Construction,Small,2023-10-24
+B2B-2342,Construction,Small,2023-04-08
+B2B-2731,Legal Services,Medium,2024-02-09
+B2B-2590,Construction,Medium,2023-01-10
+B2B-2692,Legal Services,Small,2023-04-04
+B2B-2002,Tech Startup,Small,2023-03-12
+B2B-2404,Consulting,Small,2023-12-22
+B2B-2607,Construction,Small,2022-02-26
+B2B-2083,Legal Services,Medium,2023-03-04
+B2B-2275,Construction,Small,2023-04-11
+B2B-2181,Tech Startup,Small,2023-06-29
+B2B-2418,Education,Medium,2023-04-24
+B2B-2395,Legal Services,Small,2024-03-05
+B2B-2156,Consulting,Medium,2022-06-19
+B2B-2631,Education,Small,2023-07-07
+B2B-2674,Construction,Small,2022-01-02
+B2B-2399,Education,Small,2022-05-12
+B2B-2586,Legal Services,Small,2022-10-25
+B2B-2729,Legal Services,Small,2023-04-13
+B2B-2193,Consulting,Small,2023-06-06
+B2B-2216,Tech Startup,Small,2023-12-25
+B2B-2689,Legal Services,Small,2022-10-09
+B2B-2248,Tech Startup,Small,2022-05-31
+B2B-2110,Education,Small,2022-07-28
+B2B-2115,Legal Services,Small,2022-01-05
+B2B-2612,Education,Medium,2022-06-28
+B2B-2580,Education,Small,2023-02-09
+B2B-2603,Construction,Small,2023-02-24
+B2B-2643,Education,Small,2022-12-01
+B2B-2200,Education,Medium,2023-08-25
+B2B-2531,Legal Services,Small,2024-02-27
+B2B-2198,Education,Small,2023-08-27
+B2B-2401,Construction,Small,2022-09-13
+B2B-2525,Legal Services,Medium,2023-12-09
+B2B-2469,Construction,Medium,2022-10-27
+B2B-2524,Legal Services,Small,2022-06-28
+B2B-2773,Education,Small,2024-03-22
+B2B-2613,Construction,Small,2023-10-22
+B2B-2004,Tech Startup,Small,2023-06-18
+B2B-2015,Education,Medium,2022-06-09
+B2B-2528,Construction,Small,2022-04-19
+B2B-2366,Legal Services,Small,2024-05-07
+B2B-2150,Education,Medium,2022-03-14
+B2B-2618,Construction,Small,2023-07-12
+B2B-2054,Tech Startup,Medium,2023-11-28
+B2B-2032,Construction,Medium,2023-03-02
+B2B-2665,Legal Services,Medium,2023-09-12
+B2B-2619,Tech Startup,Small,2023-07-27
+B2B-2280,Education,Small,2024-04-07
+B2B-2626,Education,Small,2023-10-24
+B2B-2541,Construction,Small,2022-08-18
+B2B-2313,Tech Startup,Small,2023-10-18
+B2B-2262,Education,Small,2022-07-26
+B2B-2051,Tech Startup,Medium,2023-11-10
+B2B-2701,Tech Startup,Medium,2023-11-02
+B2B-2261,Legal Services,Medium,2023-03-10
+B2B-2311,Legal Services,Medium,2023-04-24
+B2B-2272,Education,Small,2022-03-16
+B2B-2456,Education,Small,2022-07-24
+B2B-2793,Legal Services,Medium,2023-06-16
+B2B-2336,Education,Small,2022-12-07
+B2B-2649,Tech Startup,Small,2023-02-12
+B2B-2791,Tech Startup,Medium,2022-07-08
+B2B-2191,Legal Services,Medium,2023-12-06
+B2B-2691,Legal Services,Small,2023-05-09
+B2B-2256,Education,Small,2023-10-20
+B2B-2219,Construction,Small,2023-03-04
+B2B-2633,Legal Services,Medium,2022-07-21
+B2B-2421,Construction,Small,2023-01-28
+B2B-2174,Tech Startup,Medium,2024-02-29
+B2B-2538,Education,Small,2022-05-08
+B2B-2258,Education,Small,2023-11-24
+B2B-2348,Education,Small,2022-08-14
+B2B-2390,Education,Medium,2023-03-07
+B2B-2495,Legal Services,Medium,2022-11-24
+B2B-2671,Tech Startup,Medium,2022-12-27
+B2B-2005,Education,Small,2023-04-19
+B2B-2657,Legal Services,Small,2024-04-18
+B2B-2581,Legal Services,Medium,2023-12-15
+B2B-2220,Tech Startup,Medium,2022-02-22
+B2B-2500,Tech Startup,Medium,2022-05-17
+B2B-2517,Consulting,Small,2023-02-26
+B2B-2720,Education,Medium,2024-03-22
+B2B-2213,Education,Small,2023-06-28
+B2B-2598,Legal Services,Small,2022-01-04
+B2B-2271,Legal Services,Small,2022-01-16
+B2B-2041,Education,Small,2024-05-14
+B2B-2339,Tech Startup,Medium,2022-01-18
+B2B-2374,Construction,Small,2022-06-16
+B2B-2437,Construction,Medium,2023-08-22
+B2B-2733,Tech Startup,Small,2022-08-03
+B2B-2656,Tech Startup,Small,2022-01-09
+B2B-2540,Consulting,Medium,2023-05-13
+B2B-2507,Tech Startup,Small,2023-07-15
+B2B-2558,Legal Services,Medium,2022-12-31
+B2B-2737,Consulting,Medium,2023-04-15
+B2B-2624,Legal Services,Small,2023-07-28
+B2B-2742,Tech Startup,Medium,2023-01-03
+B2B-2799,Education,Medium,2023-11-10
+B2B-2551,Construction,Small,2023-06-30
+B2B-2372,Tech Startup,Small,2022-02-03
+B2B-2228,Construction,Medium,2022-09-12
+B2B-2246,Education,Medium,2022-08-03
+B2B-2594,Tech Startup,Small,2023-11-29
+B2B-2738,Legal Services,Medium,2024-05-04
+B2B-2020,Education,Small,2022-09-30
+B2B-2172,Education,Small,2024-03-03
+B2B-2696,Education,Medium,2022-09-07
+B2B-2497,Construction,Small,2023-12-18
+B2B-2575,Education,Medium,2023-09-17
+B2B-2694,Consulting,Medium,2022-09-08
+B2B-2767,Legal Services,Medium,2022-10-07
+B2B-2343,Construction,Small,2022-02-16
+B2B-2285,Consulting,Small,2024-06-09
+B2B-2230,Education,Small,2022-08-04
+B2B-2794,Legal Services,Medium,2022-12-19
+B2B-2089,Consulting,Medium,2022-04-15
+B2B-2367,Education,Small,2022-02-17
+B2B-2471,Tech Startup,Small,2022-06-13
+B2B-2543,Education,Small,2023-01-13
+B2B-2385,Education,Small,2023-08-24
+B2B-2706,Construction,Medium,2023-07-13
+B2B-2146,Legal Services,Small,2023-09-13
+B2B-2654,Legal Services,Small,2022-08-03
+B2B-2034,Education,Small,2022-12-18
+B2B-2560,Legal Services,Medium,2024-02-08
+B2B-2257,Construction,Small,2022-11-15
+B2B-2466,Education,Medium,2023-03-24
+B2B-2756,Education,Small,2023-03-24
+B2B-2449,Education,Small,2023-04-07
+B2B-2758,Legal Services,Small,2022-10-10
+B2B-2284,Tech Startup,Small,2023-08-22
+B2B-2570,Construction,Small,2022-05-21
+B2B-2611,Legal Services,Medium,2023-01-14
+B2B-2652,Tech Startup,Small,2022-07-20
+B2B-2104,Consulting,Medium,2022-03-01
+B2B-2194,Education,Small,2023-01-21
+B2B-2753,Consulting,Small,2023-01-06
+B2B-2699,Legal Services,Small,2023-12-28
+B2B-2604,Education,Medium,2022-05-30
+B2B-2492,Legal Services,Medium,2022-01-12
+B2B-2772,Legal Services,Small,2022-01-05
+B2B-2681,Tech Startup,Small,2024-03-25
+B2B-2302,Construction,Small,2024-03-28
+B2B-2058,Legal Services,Small,2023-05-13
+B2B-2038,Construction,Medium,2023-04-05
+B2B-2364,Tech Startup,Medium,2022-01-10
+B2B-2670,Education,Medium,2023-06-22
+B2B-2727,Tech Startup,Medium,2022-03-19
+B2B-2695,Tech Startup,Small,2022-06-24
+B2B-2796,Education,Medium,2022-03-16
+B2B-2788,Legal Services,Medium,2023-01-18
+B2B-2516,Construction,Medium,2022-07-11
+B2B-2337,Tech Startup,Medium,2022-11-09
+B2B-2345,Tech Startup,Small,2022-12-15
+B2B-2751,Education,Small,2023-01-06
+B2B-2231,Tech Startup,Small,2023-10-23
+B2B-2116,Consulting,Small,2023-11-05
+B2B-2259,Legal Services,Small,2024-01-25
+B2B-2063,Education,Small,2022-12-31
+B2B-2572,Tech Startup,Small,2023-08-19
+B2B-2408,Construction,Medium,2023-10-11
+B2B-2061,Consulting,Small,2022-08-20
+B2B-2405,Tech Startup,Medium,2023-11-29
+B2B-2129,Construction,Medium,2024-03-11
+B2B-2199,Legal Services,Small,2022-12-19
+B2B-2073,Construction,Medium,2022-03-14
+B2B-2688,Education,Small,2023-05-15
+B2B-2628,Tech Startup,Medium,2023-02-18
+B2B-2079,Construction,Small,2023-02-15
+B2B-2244,Consulting,Medium,2023-11-11
+B2B-2315,Legal Services,Small,2023-06-18
+B2B-2338,Tech Startup,Medium,2022-07-01
+B2B-2700,Tech Startup,Medium,2022-09-27
+B2B-2795,Legal Services,Medium,2022-05-26
+B2B-2602,Tech Startup,Small,2022-10-03
+B2B-2571,Construction,Small,2024-04-10
+B2B-2750,Consulting,Medium,2022-04-19
+B2B-2141,Tech Startup,Small,2023-12-21
+B2B-2655,Legal Services,Small,2023-06-26
+B2B-2117,Education,Medium,2023-02-28
+B2B-2569,Consulting,Medium,2022-08-22
+B2B-2600,Legal Services,Small,2022-01-15
+B2B-2309,Education,Small,2023-08-05
+B2B-2420,Tech Startup,Medium,2022-01-17
+B2B-2616,Tech Startup,Small,2022-12-15
+B2B-2317,Construction,Small,2023-11-20
+B2B-2561,Legal Services,Medium,2022-07-12
+B2B-2676,Legal Services,Small,2024-05-16
+B2B-2224,Legal Services,Medium,2023-07-09
+B2B-2185,Education,Medium,2022-06-02
+B2B-2306,Legal Services,Medium,2023-10-03
+B2B-2447,Construction,Small,2024-05-18
+B2B-2485,Education,Medium,2024-03-02
+B2B-2266,Tech Startup,Medium,2024-02-29
+B2B-2062,Construction,Small,2022-10-23
+B2B-2429,Education,Small,2024-01-02
+B2B-2579,Tech Startup,Medium,2023-05-03
+B2B-2501,Education,Small,2023-02-12
+B2B-2234,Construction,Medium,2022-11-11
+B2B-2620,Education,Small,2022-03-30
+B2B-2122,Education,Medium,2022-01-28
+B2B-2645,Consulting,Small,2022-07-21
+B2B-2417,Legal Services,Small,2024-03-26
+B2B-2622,Legal Services,Small,2022-08-18
+B2B-2100,Tech Startup,Medium,2024-01-13
+B2B-2552,Tech Startup,Small,2023-07-09
+B2B-2465,Tech Startup,Small,2022-10-29
+B2B-2752,Legal Services,Medium,2022-10-25
+B2B-2237,Education,Medium,2024-06-14
+B2B-2023,Legal Services,Medium,2023-05-11
+B2B-2155,Education,Small,2023-01-20
+B2B-2647,Construction,Medium,2024-03-12
+B2B-2218,Education,Medium,2022-10-03
+B2B-2251,Education,Small,2023-06-14
+B2B-2687,Construction,Small,2022-08-08
+B2B-2268,Legal Services,Medium,2023-04-27
+B2B-2076,Tech Startup,Medium,2023-01-31
+B2B-2591,Tech Startup,Medium,2023-02-27
+B2B-2332,Education,Small,2022-02-09
+B2B-2066,Construction,Medium,2023-12-21
+B2B-2053,Legal Services,Small,2023-12-06
+B2B-2635,Education,Medium,2023-05-23
+B2B-2433,Education,Small,2024-03-28
+B2B-2160,Tech Startup,Small,2023-08-18
+B2B-2153,Consulting,Small,2022-05-30
+B2B-2289,Tech Startup,Medium,2023-02-25
+B2B-2787,Tech Startup,Small,2024-06-13
+B2B-2425,Consulting,Medium,2022-04-14
+B2B-2403,Education,Small,2024-04-17
+B2B-2714,Construction,Medium,2023-04-20
+B2B-2535,Consulting,Small,2022-10-19
+B2B-2050,Consulting,Medium,2022-06-18
+B2B-2483,Legal Services,Medium,2023-12-18
+B2B-2473,Legal Services,Small,2023-07-01
+B2B-2459,Education,Small,2024-03-09
+B2B-2092,Construction,Medium,2023-04-02
+B2B-2422,Tech Startup,Medium,2022-07-25
+B2B-2133,Consulting,Small,2022-02-21
+B2B-2438,Education,Medium,2023-12-25
+B2B-2777,Tech Startup,Small,2023-06-11
+B2B-2770,Legal Services,Medium,2022-05-05
+B2B-2481,Education,Small,2022-12-12
+B2B-2055,Tech Startup,Small,2022-07-12
+B2B-2365,Education,Medium,2023-07-04
+B2B-2203,Legal Services,Small,2022-02-10
+B2B-2427,Legal Services,Medium,2023-05-17
+B2B-2593,Construction,Medium,2024-02-25
+B2B-2407,Tech Startup,Small,2022-07-16
+B2B-2127,Legal Services,Small,2024-05-06
+B2B-2361,Construction,Small,2022-01-27
+B2B-2675,Construction,Small,2023-03-27
+B2B-2082,Education,Small,2022-07-02
+B2B-2235,Tech Startup,Small,2023-11-18
+B2B-2479,Consulting,Medium,2023-02-26
+B2B-2253,Tech Startup,Medium,2022-02-26
+B2B-2277,Construction,Small,2023-10-19
+B2B-2505,Education,Medium,2024-01-26
+B2B-2509,Construction,Small,2022-09-29
+B2B-2789,Education,Medium,2022-02-18
+B2B-2042,Construction,Small,2022-07-28
+B2B-2124,Consulting,Medium,2023-07-26
+B2B-2128,Legal Services,Small,2023-05-31
+B2B-2621,Education,Small,2022-06-17
+B2B-2384,Construction,Medium,2023-10-30
+B2B-2797,Tech Startup,Medium,2022-04-09
+B2B-2725,Tech Startup,Small,2022-01-03
+B2B-2003,Tech Startup,Medium,2023-02-27
+B2B-2044,Education,Small,2022-11-25
+B2B-2010,Tech Startup,Small,2022-11-16
+B2B-2660,Consulting,Small,2024-01-20
+B2B-2094,Education,Small,2024-02-21
+B2B-2726,Education,Medium,2024-01-03
+B2B-2352,Tech Startup,Small,2024-01-24
+B2B-2026,Consulting,Small,2023-11-27
+B2B-2684,Education,Small,2023-03-11
+B2B-2444,Legal Services,Small,2022-07-31
+B2B-2060,Tech Startup,Small,2024-04-30
+B2B-2653,Education,Small,2022-08-04
+B2B-2239,Tech Startup,Medium,2023-11-13
+B2B-2123,Tech Startup,Small,2023-05-25
+B2B-2249,Education,Small,2023-12-25
+B2B-2634,Tech Startup,Small,2023-09-18
+B2B-2431,Construction,Small,2022-10-06
+B2B-2152,Education,Small,2022-02-04
+B2B-2206,Construction,Small,2022-08-06
+B2B-2389,Education,Medium,2022-07-17
+B2B-2045,Construction,Medium,2024-01-28
+B2B-2096,Legal Services,Medium,2024-02-23
+B2B-2177,Tech Startup,Small,2022-05-27
+B2B-2204,Legal Services,Small,2024-04-28
+B2B-2186,Tech Startup,Small,2023-06-18
+B2B-2766,Legal Services,Small,2022-01-07
+B2B-2132,Tech Startup,Medium,2023-03-25
+B2B-2072,Legal Services,Medium,2024-03-14
+B2B-2212,Construction,Medium,2023-06-28
+B2B-2741,Tech Startup,Small,2023-01-31
+B2B-2413,Legal Services,Small,2022-02-22
+B2B-2740,Education,Small,2023-01-30
+B2B-2627,Education,Small,2023-12-05
+B2B-2210,Legal Services,Small,2022-04-21
+B2B-2279,Tech Startup,Small,2023-06-03
+B2B-2452,Tech Startup,Small,2022-09-28
+B2B-2030,Construction,Medium,2023-04-04
+B2B-2588,Consulting,Small,2023-11-18
+B2B-2033,Tech Startup,Medium,2023-01-21
+B2B-2518,Tech Startup,Medium,2022-11-24
+B2B-2307,Education,Small,2024-01-08
+B2B-2241,Construction,Medium,2022-03-11
+B2B-2183,Education,Small,2022-10-11
+B2B-2703,Education,Small,2023-01-31
+B2B-2565,Tech Startup,Small,2022-07-20
+B2B-2724,Construction,Medium,2022-11-21
+B2B-2781,Legal Services,Small,2022-02-13
+B2B-2024,Education,Small,2023-02-08
+B2B-2358,Legal Services,Small,2022-03-23
+B2B-2490,Tech Startup,Medium,2022-07-17
+B2B-2208,Education,Small,2022-02-14
+B2B-2334,Education,Small,2022-11-04
+B2B-2197,Legal Services,Medium,2022-04-24
+B2B-2145,Education,Small,2022-11-02
+B2B-2316,Consulting,Medium,2022-06-28
+B2B-2105,Construction,Medium,2023-02-22
+B2B-2775,Tech Startup,Medium,2022-08-31
+B2B-2167,Construction,Medium,2022-10-01
+B2B-2149,Legal Services,Medium,2022-06-23
+B2B-2027,Construction,Medium,2023-08-06
+B2B-2243,Tech Startup,Small,2023-12-16
+B2B-2001,Education,Medium,2024-04-02
+B2B-2596,Education,Small,2023-06-03
+B2B-2136,Tech Startup,Small,2024-01-14
+B2B-2460,Legal Services,Medium,2022-04-14
+B2B-2382,Tech Startup,Small,2024-04-17
+B2B-2414,Construction,Medium,2023-01-22
+B2B-2450,Construction,Medium,2022-11-11
+B2B-2097,Construction,Medium,2023-11-06
+B2B-2095,Legal Services,Medium,2023-09-29
+B2B-2760,Tech Startup,Small,2022-11-30
+B2B-2545,Tech Startup,Small,2022-06-13
+B2B-2084,Education,Small,2023-09-29
+B2B-2273,Tech Startup,Medium,2023-06-03
+B2B-2161,Legal Services,Small,2024-05-31
+B2B-2320,Education,Medium,2022-03-07
+B2B-2474,Consulting,Small,2024-06-10
+B2B-2734,Consulting,Small,2023-05-16
+B2B-2135,Consulting,Medium,2024-04-19
+B2B-2173,Education,Medium,2024-05-04
+B2B-2578,Consulting,Medium,2024-01-17
+B2B-2254,Education,Small,2022-06-20
+B2B-2351,Tech Startup,Small,2024-01-22
+B2B-2363,Tech Startup,Medium,2022-03-23
+B2B-2644,Legal Services,Small,2024-03-28
+B2B-2445,Tech Startup,Medium,2022-12-09
+B2B-2682,Education,Medium,2024-06-12
+B2B-2476,Legal Services,Small,2022-09-27
+B2B-2242,Education,Small,2022-05-26
+B2B-2188,Education,Small,2022-05-09
+B2B-2493,Legal Services,Medium,2022-07-23
+B2B-2463,Education,Medium,2023-08-03
+B2B-2114,Tech Startup,Small,2023-09-13
+B2B-2697,Education,Medium,2022-03-21
+B2B-2503,Tech Startup,Medium,2022-09-11
+B2B-2190,Education,Small,2022-10-22
+B2B-2040,Construction,Small,2024-04-22
+B2B-2664,Legal Services,Medium,2023-08-05
+B2B-2143,Consulting,Small,2023-09-14
+B2B-2107,Tech Startup,Small,2022-06-09
+B2B-2585,Tech Startup,Medium,2022-01-30
+B2B-2482,Legal Services,Small,2023-06-16
+B2B-2409,Construction,Small,2023-09-13
+B2B-2659,Legal Services,Small,2022-01-29
+B2B-2677,Construction,Small,2022-03-02
+B2B-2278,Consulting,Medium,2024-05-01
+B2B-2798,Tech Startup,Medium,2022-08-07
+B2B-2784,Legal Services,Small,2023-06-06
+B2B-2637,Tech Startup,Medium,2024-05-26
+B2B-2577,Construction,Medium,2024-01-23
+B2B-2269,Construction,Small,2022-11-01
+B2B-2118,Tech Startup,Small,2023-06-03
+B2B-2526,Tech Startup,Medium,2022-07-23
+B2B-2091,Construction,Medium,2023-09-12
+B2B-2328,Tech Startup,Small,2023-09-15
+B2B-2636,Tech Startup,Small,2023-09-20
+B2B-2164,Education,Medium,2023-07-23
+B2B-2297,Tech Startup,Small,2022-09-05
+B2B-2323,Consulting,Small,2024-01-18
+B2B-2016,Tech Startup,Small,2024-01-10
+B2B-2305,Tech Startup,Medium,2022-04-08
+B2B-2774,Construction,Small,2023-01-23
+B2B-2735,Education,Small,2023-04-28
+B2B-2486,Consulting,Small,2022-07-28
+B2B-2446,Education,Small,2022-03-25
+B2B-2717,Legal Services,Small,2023-10-17
+B2B-2179,Construction,Small,2023-10-31
+B2B-2574,Construction,Small,2022-09-04
+B2B-2119,Education,Small,2023-09-09
+B2B-2779,Tech Startup,Medium,2023-01-15
+B2B-2324,Tech Startup,Medium,2023-08-22
+B2B-2440,Construction,Small,2024-02-14
+B2B-2229,Education,Small,2022-09-04
+B2B-2166,Legal Services,Small,2022-08-02
+B2B-2710,Tech Startup,Small,2022-09-29
+B2B-2088,Education,Medium,2023-04-17
+B2B-2106,Tech Startup,Small,2024-06-11
+B2B-2368,Construction,Medium,2024-05-19
+B2B-2087,Legal Services,Small,2023-09-22
+B2B-2014,Education,Small,2022-06-11
+B2B-2350,Tech Startup,Medium,2023-11-30
+B2B-2022,Education,Medium,2023-01-12
+B2B-2457,Education,Small,2022-10-23
+B2B-2375,Legal Services,Medium,2023-04-16
+B2B-2000,Consulting,Medium,2024-01-15
+B2B-2557,Tech Startup,Small,2024-05-16
+B2B-2189,Legal Services,Small,2024-01-22
+B2B-2247,Construction,Small,2023-05-01
+B2B-2398,Consulting,Small,2022-11-14
+B2B-2077,Tech Startup,Small,2023-04-17
+B2B-2599,Construction,Medium,2023-08-25
+B2B-2171,Legal Services,Small,2023-01-19
+B2B-2472,Construction,Small,2023-01-26
+B2B-2693,Tech Startup,Small,2024-04-26
+B2B-2494,Legal Services,Small,2023-02-23
+B2B-2017,Education,Medium,2023-01-26
+B2B-2286,Legal Services,Small,2022-10-22
+B2B-2321,Education,Small,2022-04-19
+B2B-2207,Tech Startup,Medium,2022-02-15
+B2B-2432,Tech Startup,Medium,2022-03-23
+B2B-2762,Legal Services,Medium,2022-07-31
+B2B-2470,Tech Startup,Small,2023-08-03
+B2B-2601,Tech Startup,Medium,2022-06-13
+B2B-2170,Construction,Medium,2022-09-03
+B2B-2454,Education,Small,2024-04-26
+B2B-2587,Education,Small,2023-01-21
+B2B-2304,Legal Services,Small,2024-06-13
+B2B-2192,Consulting,Small,2022-03-06
+B2B-2370,Education,Small,2024-05-22
+B2B-2202,Legal Services,Medium,2023-08-19
+B2B-2201,Education,Small,2023-01-18
+B2B-2721,Education,Small,2022-01-31
+B2B-2393,Education,Small,2023-02-01
+B2B-2757,Tech Startup,Medium,2022-12-30
+B2B-2468,Legal Services,Small,2022-01-12
+B2B-2521,Consulting,Small,2022-01-15
+B2B-2281,Tech Startup,Small,2024-04-27
+B2B-2288,Tech Startup,Small,2024-02-08
+B2B-2510,Education,Small,2022-12-04
+B2B-2074,Tech Startup,Small,2022-09-29
+B2B-2327,Construction,Small,2022-11-24
+B2B-2260,Construction,Small,2022-02-26
+B2B-2195,Tech Startup,Small,2022-08-25
+B2B-2308,Construction,Medium,2023-09-25
+B2B-2238,Education,Medium,2023-05-27
+B2B-2138,Education,Medium,2024-02-10
+B2B-2158,Education,Small,2022-09-18
+B2B-2662,Legal Services,Small,2024-05-19
+B2B-2391,Tech Startup,Small,2023-11-16
+B2B-2381,Tech Startup,Small,2024-05-31
+B2B-2554,Education,Small,2022-02-07
+B2B-2111,Legal Services,Medium,2023-10-16
+B2B-2715,Education,Medium,2022-10-21
+B2B-2610,Construction,Small,2023-10-26
+B2B-2646,Education,Small,2023-05-30
+B2B-2641,Education,Medium,2022-06-17
+B2B-2069,Consulting,Medium,2024-03-12
+B2B-2467,Legal Services,Small,2023-12-21
+B2B-2739,Construction,Medium,2024-02-15
+B2B-2508,Consulting,Small,2023-07-30
+B2B-2028,Construction,Medium,2023-03-09
+B2B-2617,Construction,Small,2024-05-07
+B2B-2101,Construction,Small,2022-01-23
+B2B-2048,Consulting,Small,2024-04-01
+B2B-2369,Tech Startup,Small,2024-05-08
+B2B-2632,Construction,Small,2023-05-15
+B2B-2748,Legal Services,Small,2022-05-21
+B2B-2292,Legal Services,Medium,2023-08-07
+B2B-2548,Education,Small,2023-04-30
+B2B-2159,Education,Medium,2023-12-11
+B2B-2293,Education,Small,2023-08-03
+B2B-2568,Legal Services,Small,2022-03-24
+B2B-2214,Legal Services,Small,2022-11-16
+B2B-2294,Tech Startup,Small,2022-03-09
+B2B-2759,Education,Small,2023-04-15
+B2B-2098,Tech Startup,Medium,2024-02-02
+B2B-2057,Legal Services,Small,2023-06-19
+B2B-2059,Consulting,Small,2023-02-19
+B2B-2563,Consulting,Medium,2023-01-21
+B2B-2360,Legal Services,Small,2024-01-09
+B2B-2222,Consulting,Medium,2023-01-26
+B2B-2065,Education,Small,2023-10-14
+B2B-2685,Legal Services,Small,2022-10-18
+B2B-2380,Tech Startup,Small,2023-08-31
+B2B-2187,Tech Startup,Medium,2022-03-02
+B2B-2686,Education,Small,2023-01-02
+B2B-2184,Education,Small,2024-04-05
+B2B-2744,Consulting,Medium,2023-07-31
+B2B-2423,Tech Startup,Medium,2024-04-13
+B2B-2300,Construction,Small,2022-07-03
+B2B-2547,Legal Services,Small,2024-01-25
+B2B-2037,Education,Small,2022-08-03
+B2B-2672,Tech Startup,Medium,2023-01-26
+B2B-2056,Tech Startup,Medium,2022-10-10
+B2B-2406,Education,Small,2022-04-26
+B2B-2498,Construction,Medium,2022-02-02
+B2B-2488,Tech Startup,Small,2023-09-16
+B2B-2196,Tech Startup,Medium,2022-06-25
+B2B-2357,Tech Startup,Medium,2023-06-22
+B2B-2549,Education,Small,2023-10-21
+B2B-2712,Legal Services,Medium,2022-04-25
+B2B-2373,Education,Medium,2023-07-11
+B2B-2025,Legal Services,Medium,2024-01-04
+B2B-2356,Construction,Medium,2023-01-03
+B2B-2515,Legal Services,Small,2022-11-12
+B2B-2283,Construction,Small,2023-06-28
+B2B-2743,Legal Services,Small,2024-02-25
+B2B-2583,Tech Startup,Medium,2023-09-21
+B2B-2035,Tech Startup,Medium,2024-01-14
+B2B-2397,Construction,Small,2022-10-13
+B2B-2036,Construction,Small,2023-04-23
+B2B-2012,Education,Small,2023-03-14
+B2B-2609,Tech Startup,Medium,2022-08-06
+B2B-2347,Tech Startup,Small,2024-02-16
+B2B-2354,Consulting,Small,2023-04-08
+B2B-2439,Construction,Small,2023-02-26
+B2B-2668,Legal Services,Small,2022-08-19
+B2B-2458,Education,Medium,2024-04-30
+B2B-2761,Tech Startup,Small,2022-01-28
+B2B-2523,Education,Medium,2024-05-08
+B2B-2778,Education,Small,2023-09-24
+B2B-2383,Construction,Small,2022-03-12
+B2B-2513,Education,Small,2023-10-15
+B2B-2663,Consulting,Small,2022-05-20
+B2B-2589,Education,Small,2023-09-12
+B2B-2137,Legal Services,Small,2023-04-28
+B2B-2039,Tech Startup,Small,2022-08-09
+B2B-2597,Tech Startup,Medium,2022-10-03
+B2B-2754,Construction,Small,2023-09-14
+B2B-2318,Education,Medium,2023-12-21
+B2B-2640,Education,Small,2022-05-01
+B2B-2536,Education,Medium,2022-12-10
+B2B-2506,Construction,Medium,2022-10-15
+B2B-2529,Legal Services,Small,2022-03-17
+B2B-2605,Tech Startup,Medium,2024-06-08
+B2B-2514,Legal Services,Medium,2023-03-28
+B2B-2462,Legal Services,Small,2022-01-30
+B2B-2250,Education,Small,2023-12-02
+B2B-2359,Tech Startup,Medium,2022-04-28
+B2B-2708,Education,Small,2022-01-01
+B2B-2553,Education,Small,2022-10-02
+B2B-2615,Tech Startup,Medium,2022-05-11
+B2B-2144,Legal Services,Small,2024-06-16
+B2B-2475,Legal Services,Small,2023-01-17
+B2B-2162,Education,Small,2022-07-26
+B2B-2064,Education,Small,2023-07-09
+B2B-2680,Construction,Small,2022-09-19
+B2B-2582,Tech Startup,Small,2023-09-30
+B2B-2070,Tech Startup,Small,2023-11-07
+B2B-2435,Legal Services,Small,2022-03-18
+B2B-2126,Legal Services,Small,2022-07-05
+B2B-2046,Construction,Medium,2022-04-30
+B2B-2415,Tech Startup,Small,2022-06-13
+B2B-2264,Consulting,Small,2022-06-21
+B2B-2768,Education,Small,2024-03-22
+B2B-2669,Construction,Small,2023-08-26
+B2B-2564,Education,Small,2024-03-17
+B2B-2410,Tech Startup,Small,2022-09-08
+B2B-2018,Construction,Medium,2022-01-01
+B2B-2511,Consulting,Medium,2022-09-11
+B2B-2303,Legal Services,Small,2022-07-28
+B2B-2496,Education,Medium,2024-02-03
+B2B-2205,Construction,Small,2024-01-09
+B2B-2043,Consulting,Small,2022-07-07
+B2B-2502,Legal Services,Medium,2023-11-03
+B2B-2071,Legal Services,Medium,2023-02-24
+B2B-2031,Legal Services,Medium,2022-10-14
+B2B-2441,Education,Small,2022-04-07
+B2B-2102,Consulting,Small,2022-05-06
+B2B-2165,Education,Medium,2023-12-10
+B2B-2678,Construction,Small,2022-08-13
+B2B-2707,Education,Small,2022-12-16
+B2B-2702,Consulting,Small,2023-03-23
+B2B-2792,Legal Services,Small,2023-05-13
+B2B-2049,Construction,Small,2024-04-25
+B2B-2730,Construction,Small,2023-07-15
+B2B-2478,Construction,Small,2024-04-28
+B2B-2081,Education,Small,2023-09-12
+B2B-2353,Tech Startup,Small,2022-01-09
+B2B-2728,Tech Startup,Medium,2022-11-05
+B2B-2182,Tech Startup,Small,2022-09-09
+B2B-2019,Legal Services,Small,2022-04-15
+B2B-2673,Education,Small,2022-08-02
+B2B-2067,Education,Small,2023-04-14
+B2B-2295,Tech Startup,Small,2022-07-20
+B2B-2499,Legal Services,Small,2024-01-08
+B2B-2532,Tech Startup,Small,2022-05-01
+B2B-2103,Education,Medium,2023-03-30
+B2B-2519,Tech Startup,Small,2022-10-24
+B2B-2075,Education,Medium,2024-04-06
+B2B-2140,Consulting,Medium,2022-11-28
+B2B-2790,Consulting,Medium,2024-02-14
+B2B-2765,Legal Services,Small,2022-06-13
+B2B-2527,Legal Services,Small,2024-01-08
+B2B-2638,Education,Medium,2023-06-16
+B2B-2113,Education,Medium,2022-08-06
+B2B-2052,Consulting,Small,2023-06-15
+B2B-2331,Legal Services,Small,2022-04-09
+B2B-2371,Tech Startup,Medium,2022-02-14
+B2B-2625,Tech Startup,Small,2023-03-30
+B2B-2319,Tech Startup,Medium,2022-02-06
+B2B-2411,Legal Services,Small,2024-05-03
+B2B-2639,Legal Services,Medium,2022-08-30
+B2B-2709,Legal Services,Small,2023-09-07
+B2B-2245,Tech Startup,Medium,2022-12-24
+B2B-2550,Education,Small,2023-01-10
+B2B-2584,Education,Small,2024-03-25
+B2B-2078,Construction,Medium,2024-04-08
+B2B-2608,Legal Services,Small,2024-02-11
+B2B-2009,Education,Small,2024-05-17
+B2B-2068,Legal Services,Medium,2022-12-01
+B2B-2301,Education,Medium,2023-04-24
+B2B-2108,Construction,Small,2024-02-14
+B2B-2346,Tech Startup,Small,2022-10-14
+B2B-2764,Tech Startup,Medium,2023-12-13
+B2B-2512,Consulting,Medium,2024-05-10
+B2B-2683,Education,Medium,2022-03-16
+B2B-2537,Consulting,Medium,2023-09-09
+B2B-2434,Education,Small,2022-04-30
+B2B-2011,Construction,Medium,2022-03-28
+B2B-2630,Consulting,Medium,2023-02-03
+B2B-2461,Education,Medium,2024-01-12
+B2B-2402,Construction,Small,2023-01-02
+B2B-2661,Tech Startup,Small,2022-10-06
+B2B-2029,Education,Small,2022-10-22
+B2B-2134,Tech Startup,Small,2023-06-17
+B2B-2125,Tech Startup,Small,2023-03-28
+B2B-2480,Construction,Small,2024-06-04
+B2B-2255,Legal Services,Small,2024-05-09
+B2B-2704,Consulting,Small,2023-11-01
+B2B-2021,Education,Small,2023-09-18
+B2B-2504,Tech Startup,Small,2023-09-20
+B2B-2392,Legal Services,Small,2022-09-17
+B2B-2428,Education,Small,2022-04-21
+B2B-2419,Tech Startup,Medium,2023-01-03
+B2B-2090,Construction,Small,2024-06-17
+B2B-2221,Education,Medium,2024-04-13
+B2B-2227,Tech Startup,Medium,2023-08-14
+B2B-2325,Consulting,Medium,2022-09-18
+B2B-2291,Tech Startup,Small,2024-02-25
+B2B-2180,Tech Startup,Small,2023-09-02
+B2B-2713,Education,Small,2022-08-11
+B2B-2112,Education,Medium,2024-06-08
+B2B-2233,Education,Medium,2022-06-23
+B2B-2290,Education,Medium,2022-06-17
+B2B-2749,Construction,Small,2023-05-20
+B2B-2705,Construction,Small,2023-10-04
+B2B-2148,Tech Startup,Medium,2022-06-23
+B2B-2267,Education,Small,2024-06-15
+B2B-2534,Tech Startup,Small,2022-06-18
+B2B-2263,Legal Services,Small,2022-06-12
+B2B-2340,Legal Services,Small,2023-07-03
+B2B-2780,Education,Small,2024-05-09
+B2B-2142,Legal Services,Small,2023-12-07
+B2B-2567,Tech Startup,Small,2024-04-05
+B2B-2121,Education,Small,2024-05-09
+B2B-2533,Consulting,Small,2024-01-15
+B2B-2722,Legal Services,Small,2023-06-04
+B2B-2312,Consulting,Medium,2023-01-21
+B2B-2489,Education,Medium,2022-09-28
+B2B-2491,Education,Small,2022-09-06
+B2B-2157,Education,Medium,2022-10-05
+B2B-2455,Education,Small,2023-08-15
+B2B-2007,Education,Small,2022-03-15
+B2B-2629,Consulting,Medium,2022-06-03
+B2B-2147,Tech Startup,Small,2022-01-10
+B2B-2642,Education,Medium,2022-06-09
+B2B-2344,Legal Services,Small,2023-04-01
+B2B-2785,Education,Small,2022-01-17
+B2B-2451,Education,Medium,2022-08-07
+B2B-2566,Legal Services,Medium,2023-11-11
+B2B-2412,Education,Small,2023-03-22
+B2B-2771,Tech Startup,Medium,2023-02-17
+B2B-2573,Tech Startup,Medium,2023-02-08
+B2B-2223,Education,Small,2022-09-28
+B2B-2542,Education,Small,2022-01-22
+B2B-2314,Tech Startup,Medium,2024-04-21
+B2B-2430,Legal Services,Medium,2023-01-25
+B2B-2650,Legal Services,Small,2022-02-16
+B2B-2426,Construction,Small,2022-08-28
+B2B-2330,Construction,Small,2024-01-14
+B2B-2747,Consulting,Small,2023-09-10
+B2B-2225,Tech Startup,Small,2022-01-05
+B2B-2658,Consulting,Small,2022-10-15
+B2B-2539,Education,Small,2022-05-06
+B2B-2666,Tech Startup,Small,2022-01-02
+B2B-2736,Education,Medium,2022-05-08
+B2B-2232,Construction,Medium,2023-04-14
+B2B-2386,Education,Small,2024-03-08
+B2B-2592,Legal Services,Medium,2024-05-31
+B2B-2085,Construction,Medium,2024-01-20
+B2B-2448,Tech Startup,Small,2023-06-08
+B2B-2151,Construction,Small,2023-01-07
+B2B-2776,Education,Small,2023-06-05
+B2B-2341,Education,Small,2023-12-24
+B2B-2270,Legal Services,Small,2022-01-29
+B2B-2276,Education,Medium,2023-12-12
+B2B-2130,Construction,Medium,2023-08-10
+B2B-2763,Tech Startup,Small,2023-12-21
+B2B-2265,Legal Services,Medium,2022-04-25
+B2B-2217,Education,Medium,2023-06-15
+B2B-2562,Education,Medium,2022-03-18
+B2B-2556,Education,Medium,2023-06-06
+B2B-2623,Legal Services,Medium,2022-09-22
+B2B-2377,Tech Startup,Medium,2022-03-11
+B2B-2252,Tech Startup,Small,2023-09-25
+B2B-2400,Consulting,Medium,2022-07-19
+B2B-2169,Legal Services,Small,2023-10-08
+B2B-2614,Tech Startup,Medium,2024-04-08
+B2B-2690,Education,Medium,2024-03-26
+B2B-2322,Tech Startup,Medium,2022-08-22
+B2B-2755,Legal Services,Small,2023-04-13
+B2B-2484,Legal Services,Medium,2022-01-26
+B2B-2477,Legal Services,Small,2022-10-03
+B2B-2335,Tech Startup,Medium,2023-10-14
+B2B-2226,Consulting,Small,2023-04-09
+B2B-2131,Construction,Small,2022-11-28
+B2B-2442,Education,Medium,2022-11-01
+B2B-2555,Education,Small,2023-12-08
+B2B-2546,Legal Services,Medium,2022-05-21
+B2B-2746,Education,Medium,2023-10-14
+B2B-2595,Education,Small,2023-12-30
+B2B-2355,Education,Medium,2024-04-05
+B2B-2349,Legal Services,Medium,2022-03-11
+B2B-2416,Consulting,Medium,2022-10-13
+B2B-2522,Education,Medium,2024-04-22
+B2B-2109,Education,Medium,2022-07-29
+B2B-2296,Education,Small,2022-07-06
+B2B-2154,Construction,Small,2022-11-23
+B2B-2326,Construction,Medium,2022-09-09
+B2B-2453,Education,Small,2022-01-28
+B2B-2544,Tech Startup,Small,2022-12-21
+B2B-2786,Construction,Small,2024-01-18
+B2B-2769,Education,Medium,2022-09-21
+B2B-2783,Education,Small,2022-01-21
+B2B-2559,Legal Services,Medium,2022-08-13
+B2B-2732,Education,Medium,2023-03-20
+B2B-2718,Consulting,Medium,2022-07-26
+B2B-2080,Consulting,Medium,2023-01-07
+B2B-2711,Construction,Small,2022-07-12
+B2B-2047,Tech Startup,Medium,2022-11-24
+B2B-2168,Tech Startup,Medium,2022-08-01
+B2B-2396,Education,Small,2024-04-25
+B2B-2387,Education,Medium,2023-05-06
+B2B-2299,Construction,Medium,2023-01-03
+B2B-2723,Legal Services,Small,2022-02-11
+B2B-2745,Tech Startup,Small,2022-03-26
+B2B-2274,Education,Small,2023-08-01
+B2B-2464,Education,Medium,2022-05-09
+B2B-2176,Construction,Small,2022-10-06
+B2B-2424,Tech Startup,Small,2023-12-09
+B2B-2006,Legal Services,Medium,2023-02-26
+B2B-2178,Education,Small,2023-04-18
+B2B-2667,Education,Medium,2024-02-04
+B2B-2086,Consulting,Small,2022-09-10
+B2B-2209,Education,Small,2022-02-11
+B2B-2443,Legal Services,Medium,2022-03-11
+B2B-2333,Construction,Small,2024-02-11
+B2B-2099,Tech Startup,Medium,2024-04-16
+B2B-2093,Legal Services,Small,2024-03-08
+B2B-2716,Consulting,Small,2023-06-24
+B2B-2329,Legal Services,Medium,2023-04-15
+B2B-2008,Construction,Medium,2023-10-29
+B2B-2576,Education,Medium,2024-02-06
+B2B-2376,Education,Small,2023-04-11
+B2B-2719,Construction,Small,2024-06-10
+B2B-2698,Tech Startup,Small,2024-06-16
+B2B-2211,Legal Services,Small,2022-02-10
+B2B-2236,Legal Services,Small,2022-04-23
+B2B-2240,Consulting,Medium,2022-10-08
+B2B-2379,Education,Small,2023-09-21
+B2B-2362,Construction,Medium,2022-05-25
+B2B-2378,Legal Services,Small,2022-01-09
+B2B-2606,Construction,Small,2023-08-01
+B2B-2139,Legal Services,Medium,2023-01-04
+B2B-2520,Consulting,Small,2023-05-31
+B2B-2175,Legal Services,Medium,2023-04-01
+B2B-2394,Construction,Small,2023-05-11
+B2B-2487,Legal Services,Small,2023-11-23
+B2B-2388,Legal Services,Small,2023-12-25
+B2B-2651,Education,Medium,2022-05-11
+B2B-2530,Tech Startup,Small,2022-03-17
+B2B-2282,Legal Services,Small,2023-09-27

@@ -1,0 +1,2 @@
+n_users,n_items,n_interactions,matrix_types
+800,370,43720,"['quantity', 'confidence', 'time_decayed', 'binary', 'quantity_normalized', 'confidence_normalized']"

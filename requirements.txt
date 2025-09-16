@@ -7,13 +7,26 @@ scipy>=1.9
 scikit-learn>=1.2
 
 # Deep learning (used in retriever and reranker)
-# Pin within a broad, compatible range to support Windows environments
 torch>=2.1,<2.7
+
+# Search & similarity
+faiss-cpu>=1.7
+
+# Configuration & utilities
+pyyaml>=6.0
+rich>=13.0
+tqdm>=4.65
+
+# Web application
+streamlit>=1.28
 
 # IO & storage
 pyarrow>=12
 fastparquet>=2023.2
 openpyxl>=3.1
 
-# Visualization (notebook 01)
+# Visualization
 matplotlib>=3.7
+
+# Development & testing
+pytest>=7.0

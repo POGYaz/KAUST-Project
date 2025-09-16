@@ -28,7 +28,7 @@ from src.utils.io import read_numpy
 
 # Set page config
 st.set_page_config(
-    page_title="AI Recommendations",
+    page_title="Jarir Recommendation System",
     page_icon="🎯",
     layout="wide"
 )
@@ -502,8 +502,8 @@ def main():
     # Header
     st.markdown("""
     <div class="header">
-        <h1>🎯 AI Recommendations</h1>
-        <p>Smart product recommendations powered by machine learning</p>
+        <h1>🎯 Jarir B2B Recommendation System</h1>
+        <p>Personalized product recommendations for enhanced customer experience</p>
     </div>
     """, unsafe_allow_html=True)
     

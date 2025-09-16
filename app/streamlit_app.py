@@ -14,6 +14,13 @@ from datetime import datetime
 from typing import List, Optional, Dict, Tuple
 import time
 import re
+import sys
+import os
+
+# Add project root to Python path for Streamlit Cloud deployment
+project_root = Path(__file__).parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
 
 # Import our modules
 from src.data.features import RankingFeatureBuilder

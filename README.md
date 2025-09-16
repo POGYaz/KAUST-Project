@@ -14,7 +14,7 @@ This architecture balances computational efficiency with recommendation quality,
 ## 🚀 Live Demo
 
 **Option 1: Streamlit Cloud (Recommended)**
-- Visit the live application: [Jarir B2B Recommendation System](https://your-streamlit-url.streamlit.app)
+- Visit the live application: [Jarir B2B Recommendation System](https://jarir-project.streamlit.app/)
 - No installation required - ready to use immediately
 
 **Option 2: Local Development**
@@ -82,7 +82,7 @@ KAUST-Project/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/KAUST-Project.git
+git clone https://github.com/POGYaz/KAUST-Project
 cd KAUST-Project
 ```
 

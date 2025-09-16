@@ -1,7 +1,19 @@
-numpy
-pandas
-implicit>=0.6.0
-scikit-learn>=1.0.0
-scipy>=1.7.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
+# Core numerical stack
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+
+# Machine learning
+scikit-learn>=1.2
+
+# Deep learning (used in retriever and reranker)
+# Pin within a broad, compatible range to support Windows environments
+torch>=2.1,<2.7
+
+# IO & storage
+pyarrow>=12
+fastparquet>=2023.2
+openpyxl>=3.1
+
+# Visualization (notebook 01)
+matplotlib>=3.7

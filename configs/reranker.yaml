@@ -1,0 +1,263 @@
+# MLP reranker model configuration
+
+# Model architecture
+model:
+  # Model type
+  type: "mlp"  # "mlp", "dcn", "wide_deep"
+  
+  # Input feature dimension (will be set based on feature builder)
+  input_dim: 5  # dot_uv, max_sim_recent, pop, hist_len, price_z
+  
+  # Hidden layer dimensions
+  hidden_dims: [384, 384, 192]
+  
+  # Regularization
+  dropout: 0.3
+  use_layer_norm: true
+  use_residual: true
+  
+  # Activation function
+  activation: "relu"  # "relu", "gelu", "swish"
+  
+  # Feature-specific dropout
+  feature_dropout:
+    enabled: true
+    feature_indices: [0]  # Apply to dot_uv feature (index 0)
+    dropout_prob: 0.3
+
+# Training configuration
+training:
+  # Basic training parameters
+  batch_size: 2048
+  epochs: 20
+  
+  # Early stopping
+  patience: 5
+  early_stopping_metric: "val_recall@10"
+  early_stopping_mode: "max"
+  min_delta: 0.0001
+  
+  # Mixed precision training
+  mixed_precision: true
+  
+  # Gradient clipping
+  gradient_clip_value: 1.0
+
+# Loss function configuration
+loss:
+  type: "bce"  # "bce", "focal", "ranking"
+  params:
+    reduction: "mean"
+    pos_weight: null  # Auto-balance if null
+
+# Optimizer configuration
+optimizer:
+  type: "adamw"
+  params:
+    lr: 1.0e-3
+    weight_decay: 1.0e-4
+    betas: [0.9, 0.999]
+    eps: 1.0e-8
+
+# Learning rate scheduler
+scheduler:
+  type: "plateau"
+  params:
+    mode: "max"
+    factor: 0.5
+    patience: 2
+    threshold: 0.0001
+    min_lr: 1.0e-6
+
+# Feature engineering configuration
+features:
+  # Maximum history length for features
+  max_history_length: 15
+  
+  # Negative sampling for training
+  neg_per_query: 20
+  hard_negatives: true
+  
+  # Feature normalization
+  normalize_features: false
+  
+  # Feature selection
+  selected_features:
+    - "dot_uv"
+    - "max_sim_recent" 
+    - "pop"
+    - "hist_len"
+    - "price_z"
+
+# Candidate generation configuration
+candidates:
+  # Number of candidates to retrieve for reranking
+  retrieval_k: 100
+  
+  # Batch size for candidate generation
+  candidate_batch_size: 4096
+  
+  # Ensure positive items are included in candidates
+  include_positive: true
+
+# Data configuration
+data:
+  # Feature building batch size
+  feature_batch_size: 1024
+  
+  # Sharding configuration for large datasets
+  shard_rows: 1000000
+  
+  # Data splits for dev evaluation during training
+  dev_split_quantile: 0.90
+  
+  # Data loading
+  num_workers: 4
+  pin_memory: true
+
+# Evaluation configuration
+evaluation:
+  # Metrics to compute
+  metrics:
+    - "recall@5"
+    - "recall@10"
+    - "recall@20"
+    - "ndcg@5"
+    - "ndcg@10"
+    - "ndcg@20"
+    - "mrr@10"
+  
+  # Evaluation batch size
+  eval_batch_size: 1024
+  
+  # Top-K for final evaluation
+  eval_topk: 10
+
+# Model checkpointing
+checkpointing:
+  # Save best model based on this metric
+  monitor: "val_recall@10"
+  mode: "max"
+  
+  # Checkpoint file path
+  filepath: "models/reranker/best_ranker.pt"
+  
+  # Save options
+  save_best_only: true
+  save_weights_only: true
+
+# Hardware configuration
+hardware:
+  # Device selection
+  device: "auto"  # "auto", "cpu", "cuda"
+  
+  # Memory optimization
+  pin_memory: true
+  non_blocking: true
+
+# Reproducibility
+random_seed: 42
+
+# Logging configuration
+logging:
+  level: "INFO"
+  
+  # Progress tracking
+  log_frequency: 10  # Log every N batches
+  
+  # Metrics tracking
+  track_metrics: true
+  save_metrics: true
+  metrics_file: "metrics/reranker_metrics.json"
+
+# Advanced training options
+advanced:
+  # Class balancing
+  class_balancing:
+    enabled: false
+    method: "oversample"  # "oversample", "undersample", "weights"
+  
+  # Focal loss parameters (if using focal loss)
+  focal_loss:
+    alpha: 0.25
+    gamma: 2.0
+  
+  # Learning rate warmup
+  warmup:
+    enabled: false
+    warmup_steps: 500
+    warmup_factor: 0.1
+  
+  # Model ensemble
+  ensemble:
+    enabled: false
+    n_models: 3
+    ensemble_method: "average"  # "average", "voting", "stacking"
+
+# Feature importance analysis
+feature_analysis:
+  # Compute feature importance after training
+  enabled: true
+  
+  # Methods for feature importance
+  methods:
+    - "permutation"
+    - "shap"  # Requires shap library
+  
+  # Save feature importance plots
+  save_plots: true
+  plot_dir: "plots/feature_importance"
+
+# Model interpretation
+interpretation:
+  # Generate model explanations for sample predictions
+  enabled: false
+  
+  # Number of samples to explain
+  n_samples: 100
+  
+  # Explanation methods
+  methods:
+    - "lime"  # Requires lime library
+    - "integrated_gradients"
+
+# Hyperparameter search
+hyperparameter_search:
+  enabled: false
+  
+  # Search space
+  search_space:
+    hidden_dims: 
+      - [256, 256, 128]
+      - [384, 384, 192]
+      - [512, 512, 256]
+    lr: [5e-4, 1e-3, 2e-3]
+    dropout: [0.2, 0.3, 0.4]
+    neg_per_query: [10, 20, 30]
+  
+  # Search configuration
+  method: "random"
+  n_trials: 15
+  objective: "val_recall@10"
+  direction: "maximize"
+
+# Production deployment
+deployment:
+  # Model optimization for inference
+  optimize_for_inference: true
+  
+  # ONNX export
+  onnx_export:
+    enabled: false
+    opset_version: 11
+    dynamic_axes: true
+  
+  # TorchScript export
+  torchscript_export:
+    enabled: false
+    method: "trace"  # "trace" or "script"
+  
+  # Quantization
+  quantization:
+    enabled: false
+    method: "dynamic"  # "dynamic", "static", "qat"

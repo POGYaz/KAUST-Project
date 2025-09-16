@@ -1,0 +1,350 @@
+# Streamlit application configuration
+
+# Application settings
+app:
+  # App title and description
+  title: "Jarir Recommendation System"
+  description: "Two-Tower + MLP Reranker Recommendation System for Jarir Dataset"
+  
+  # Page configuration
+  page_config:
+    page_title: "Jarir RecSys"
+    page_icon: "🛍️"
+    layout: "wide"
+    initial_sidebar_state: "expanded"
+  
+  # Theme settings
+  theme:
+    primary_color: "#1f77b4"
+    background_color: "#ffffff"
+    secondary_background_color: "#f0f2f6"
+    text_color: "#262730"
+
+# Model configuration
+models:
+  # Default model paths
+  default_model_dir: "data/processed/jarir"
+  
+  # Available model versions
+  versions:
+    - name: "v1.0"
+      description: "Initial Two-Tower + MLP Ranker"
+      model_dir: "data/processed/jarir"
+      retriever_model: "best_twotower_model.pth"
+      reranker_model: "ranker_best.pt"
+      user_embeddings: "user_embeddings.npy"
+      item_embeddings: "item_embeddings.npy"
+      ann_index: "ann_index"
+  
+  # Model loading settings
+  loading:
+    cache_models: true
+    lazy_loading: true
+    device: "cpu"
+
+# Data configuration
+data:
+  # Data paths
+  data_dir: "data/processed/jarir"
+  
+  # Required data files
+  files:
+    sequences_test: "sequences_test.parquet"
+    item_map: "item_id_map.parquet"
+    customer_map: "customer_id_map.parquet"
+    items_clean: "items_clean.parquet"
+    customers_clean: "customers_clean.parquet"
+  
+  # Data caching
+  cache_data: true
+  cache_ttl: 3600  # seconds
+
+# Recommendation settings
+recommendations:
+  # Default parameters
+  default_k: 10
+  max_k: 50
+  min_k: 1
+  
+  # Retrieval settings
+  retrieval:
+    default_candidates: 100
+    max_candidates: 500
+    min_candidates: 10
+  
+  # Reranking settings
+  reranking:
+    enabled: true
+    batch_size: 1024
+  
+  # Filtering options
+  filtering:
+    # Category filtering
+    enable_category_filter: true
+    
+    # Price range filtering
+    enable_price_filter: true
+    
+    # Brand filtering
+    enable_brand_filter: true
+    
+    # Popularity filtering
+    enable_popularity_filter: false
+
+# User interface configuration
+ui:
+  # Sidebar configuration
+  sidebar:
+    # Model selection
+    model_selection:
+      enabled: true
+      show_description: true
+    
+    # Parameter controls
+    parameter_controls:
+      k_selector:
+        label: "Number of Recommendations (K)"
+        min_value: 1
+        max_value: 50
+        default: 10
+        step: 1
+      
+      candidate_selector:
+        label: "Number of Candidates"
+        min_value: 10
+        max_value: 500
+        default: 100
+        step: 10
+    
+    # Filtering controls
+    filters:
+      category_filter:
+        enabled: true
+        multiselect: true
+        default: null
+      
+      brand_filter:
+        enabled: true
+        multiselect: true
+        default: null
+      
+      price_filter:
+        enabled: true
+        slider: true
+        default_min: null
+        default_max: null
+  
+  # Main content tabs
+  tabs:
+    - name: "Recommend"
+      icon: "🎯"
+      default: true
+    
+    - name: "Diagnostics"
+      icon: "📊"
+      default: false
+    
+    - name: "Model Info"
+      icon: "ℹ️"
+      default: false
+
+# Input configuration
+input:
+  # User input methods
+  methods:
+    # User ID input
+    user_id:
+      enabled: true
+      label: "Enter User ID"
+      help: "Enter a valid customer ID from the dataset"
+      validation: true
+    
+    # Item list input
+    item_list:
+      enabled: true
+      label: "Enter Item SKUs"
+      help: "Enter comma-separated item stock codes"
+      multiline: true
+      validation: true
+    
+    # Text search input
+    text_search:
+      enabled: false  # Requires text embeddings
+      label: "Search Products"
+      help: "Search for products by description"
+      placeholder: "Enter product description..."
+
+# Output configuration
+output:
+  # Recommendation display
+  recommendations:
+    # Display format
+    format: "table"  # "table", "cards", "list"
+    
+    # Columns to display
+    columns:
+      - "rank"
+      - "stock_code"
+      - "description"
+      - "brand"
+      - "category"
+      - "price_median"
+      - "popularity"
+      - "score"
+    
+    # Column formatting
+    column_config:
+      rank:
+        label: "#"
+        width: 50
+      
+      stock_code:
+        label: "SKU"
+        width: 120
+      
+      description:
+        label: "Product"
+        width: 300
+      
+      score:
+        label: "Score"
+        format: "%.3f"
+        width: 80
+    
+    # Styling
+    styling:
+      highlight_top: 3
+      show_index: false
+      use_container_width: true
+  
+  # Metrics display
+  metrics:
+    show_latency: true
+    show_coverage: false
+    show_diversity: false
+
+# Diagnostics configuration
+diagnostics:
+  # Performance metrics
+  performance:
+    track_latency: true
+    track_memory: false
+    track_throughput: false
+  
+  # Model diagnostics
+  model:
+    show_model_info: true
+    show_data_stats: true
+    show_feature_importance: false
+  
+  # Visualization
+  visualization:
+    # Embedding visualization
+    embeddings:
+      enabled: false  # Requires dimensionality reduction
+      method: "umap"  # "umap", "tsne", "pca"
+      n_samples: 1000
+    
+    # Recommendation explanation
+    explanations:
+      enabled: false
+      method: "feature_importance"
+
+# Caching configuration
+caching:
+  # Streamlit caching
+  streamlit_cache:
+    enabled: true
+    ttl: 3600
+    max_entries: 1000
+  
+  # Model caching
+  model_cache:
+    enabled: true
+    persist: true
+  
+  # Data caching
+  data_cache:
+    enabled: true
+    persist: false
+
+# Performance optimization
+performance:
+  # Lazy loading
+  lazy_loading: true
+  
+  # Batch processing
+  batch_processing:
+    enabled: true
+    batch_size: 100
+  
+  # Memory management
+  memory_management:
+    clear_cache_on_error: true
+    garbage_collection: true
+
+# Error handling
+error_handling:
+  # User-friendly error messages
+  friendly_errors: true
+  
+  # Error logging
+  log_errors: true
+  
+  # Fallback behavior
+  fallback:
+    use_popularity_fallback: true
+    show_error_details: false
+
+# Security and validation
+security:
+  # Input validation
+  input_validation:
+    enabled: true
+    max_input_length: 1000
+    sanitize_input: true
+  
+  # Rate limiting
+  rate_limiting:
+    enabled: false
+    max_requests_per_minute: 60
+
+# Logging configuration
+logging:
+  # App logging
+  level: "INFO"
+  
+  # User interaction logging
+  log_interactions: false
+  
+  # Performance logging
+  log_performance: true
+
+# Development settings
+development:
+  # Debug mode
+  debug: false
+  
+  # Show raw data
+  show_raw_data: false
+  
+  # Development tools
+  dev_tools:
+    show_config: false
+    show_session_state: false
+    profiling: false
+
+# Analytics and monitoring
+analytics:
+  # Usage analytics
+  track_usage: false
+  
+  # A/B testing
+  ab_testing:
+    enabled: false
+    experiments: []
+  
+  # Feedback collection
+  feedback:
+    enabled: false
+    methods: ["rating", "text"]

@@ -1,19 +1,48 @@
-# Ignore processed data
-/data/processed/
+# --- Project
+# Keep all model and app artifacts required for deployment
+# We DO want to commit:
+# - models/data/*.parquet
+# - models/retriever/*.npy, *.pth, *.json
+# - models/reranker/*.pt, *.json
+# - app/, src/, configs/, scripts/, tests/
 
-# Ignore Jupyter notebook checkpoints
-notebooks/.ipynb_checkpoints/
-
-# Ignore Python cache and virtual environments
+# --- Python cache / build
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-.env/
+*.egg-info/
+.dist/
+build/
+dist/
+
+# --- Environments & local config
+.env
+.env.*
 .venv/
 venv/
 ENV/
+.idea/
+.vscode/
 
-# Ignore OS files
+# --- OS files
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# --- Notebooks cache
+**/.ipynb_checkpoints/
+
+# --- Data: allow models/data for deployment, ignore raw dumps
+# Keep processed deployable parquet under models/data
+# Ignore large raw dumps and temporary scratch data
+/data/raw/
+/data/tmp/
+/data/cache/
+
+# --- Logs
+logs/
+*.log
+
+# --- Images/plots (keep logos banner; ignore temp)
+/tmp/
+**/*.tmp 

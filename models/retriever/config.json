@@ -1,0 +1,149 @@
+{
+  "model": {
+    "d_model": 256,
+    "n_blocks": 2,
+    "dropout": 0.2,
+    "embedding_init_std": 0.1
+  },
+  "training": {
+    "batch_size": 512,
+    "epochs": 50,
+    "accumulation_steps": 2,
+    "patience": 6,
+    "early_stopping_metric": "val_recall@10",
+    "early_stopping_mode": "max",
+    "min_delta": 0.0001,
+    "mixed_precision": true,
+    "gradient_clip_value": 1.0
+  },
+  "loss": {
+    "type": "infonce",
+    "params": {
+      "temperature": 0.07,
+      "use_q_correction": true,
+      "reduction": "mean"
+    }
+  },
+  "optimizer": {
+    "type": "adamw",
+    "params": {
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08
+    }
+  },
+  "scheduler": {
+    "type": "plateau",
+    "params": {
+      "mode": "max",
+      "factor": 0.5,
+      "patience": 3,
+      "threshold": 0.0001,
+      "min_lr": 1e-06
+    }
+  },
+  "data": {
+    "k_negatives": 50,
+    "dev_split_quantile": 0.9,
+    "num_workers": 4,
+    "pin_memory": true,
+    "persistent_workers": true
+  },
+  "evaluation": {
+    "metrics": [
+      "recall@5",
+      "recall@10",
+      "recall@20",
+      "ndcg@5",
+      "ndcg@10",
+      "ndcg@20"
+    ],
+    "eval_frequency": 1,
+    "eval_batch_size": 1024
+  },
+  "checkpointing": {
+    "monitor": "val_recall@10",
+    "mode": "max",
+    "filepath": "models/retriever/best_model_epoch_{epoch:02d}_recall_{val_recall@10:.4f}.pth",
+    "save_best_only": true,
+    "save_weights_only": true
+  },
+  "embeddings": {
+    "export_embeddings": true,
+    "export_path": "data/processed/jarir",
+    "user_embeddings_file": "user_embeddings.npy",
+    "item_embeddings_file": "item_embeddings.npy"
+  },
+  "hardware": {
+    "device": "auto",
+    "cuda_benchmark": true,
+    "cuda_deterministic": false
+  },
+  "random_seed": 42,
+  "logging": {
+    "level": "INFO",
+    "wandb": {
+      "enabled": false,
+      "project": "jarir-recsys",
+      "entity": null,
+      "tags": [
+        "two-tower",
+        "retrieval"
+      ]
+    },
+    "tensorboard": {
+      "enabled": false,
+      "log_dir": "logs/retriever"
+    },
+    "console_logging": true,
+    "rich_progress": true
+  },
+  "advanced": {
+    "warmup": {
+      "enabled": false,
+      "warmup_steps": 1000,
+      "warmup_factor": 0.1
+    },
+    "label_smoothing": 0.0,
+    "l2_regularization": 0.0,
+    "hard_negative_mining": false,
+    "in_batch_negatives": true,
+    "exponential_moving_average": {
+      "enabled": false,
+      "decay": 0.999
+    }
+  },
+  "hyperparameter_search": {
+    "enabled": false,
+    "search_space": {
+      "d_model": [
+        128,
+        256,
+        512
+      ],
+      "lr": [
+        "1e-4",
+        "5e-4",
+        "1e-3"
+      ],
+      "temperature": [
+        0.05,
+        0.07,
+        0.1
+      ],
+      "dropout": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    },
+    "method": "random",
+    "n_trials": 20,
+    "objective": "val_recall@10",
+    "direction": "maximize"
+  }
+}

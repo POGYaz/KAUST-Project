@@ -1,0 +1,191 @@
+# Two-Tower retrieval model configuration
+
+# Model architecture
+model:
+  # Embedding dimension
+  d_model: 256
+  
+  # Number of residual blocks per tower
+  n_blocks: 2
+  
+  # Dropout probability
+  dropout: 0.2
+  
+  # Embedding initialization
+  embedding_init_std: 0.1
+
+# Training configuration
+training:
+  # Basic training parameters
+  batch_size: 512
+  epochs: 50
+  
+  # Gradient accumulation
+  accumulation_steps: 2
+  
+  # Early stopping
+  patience: 6
+  early_stopping_metric: "val_recall@10"
+  early_stopping_mode: "max"
+  min_delta: 0.0001
+  
+  # Mixed precision training
+  mixed_precision: true
+  
+  # Gradient clipping
+  gradient_clip_value: 1.0
+
+# Loss function configuration
+loss:
+  type: "infonce"
+  params:
+    temperature: 0.07
+    use_q_correction: true
+    reduction: "mean"
+
+# Optimizer configuration
+optimizer:
+  type: "adamw"
+  params:
+    lr: 5.0e-4
+    weight_decay: 1.0e-4
+    betas: [0.9, 0.999]
+    eps: 1.0e-8
+
+# Learning rate scheduler
+scheduler:
+  type: "plateau"
+  params:
+    mode: "max"
+    factor: 0.5
+    patience: 3
+    threshold: 0.0001
+    min_lr: 1.0e-6
+
+# Data configuration
+data:
+  # Negative sampling
+  k_negatives: 50
+  
+  # Data splits for dev evaluation during training
+  dev_split_quantile: 0.90
+  
+  # Data loading
+  num_workers: 4
+  pin_memory: true
+  persistent_workers: true
+
+# Evaluation configuration
+evaluation:
+  # Metrics to compute
+  metrics:
+    - "recall@5"
+    - "recall@10" 
+    - "recall@20"
+    - "ndcg@5"
+    - "ndcg@10"
+    - "ndcg@20"
+  
+  # Evaluation frequency (in epochs)
+  eval_frequency: 1
+  
+  # Batch size for evaluation
+  eval_batch_size: 1024
+
+# Model checkpointing
+checkpointing:
+  # Save best model based on this metric
+  monitor: "val_recall@10"
+  mode: "max"
+  
+  # Checkpoint file path template
+  filepath: "models/retriever/best_model_epoch_{epoch:02d}_recall_{val_recall@10:.4f}.pth"
+  
+  # Save options
+  save_best_only: true
+  save_weights_only: true
+
+# Embedding export
+embeddings:
+  # Export user and item embeddings after training
+  export_embeddings: true
+  export_path: "data/processed/jarir"
+  
+  # Embedding file names
+  user_embeddings_file: "user_embeddings.npy"
+  item_embeddings_file: "item_embeddings.npy"
+
+# Hardware configuration
+hardware:
+  # Device selection
+  device: "auto"  # "auto", "cpu", "cuda", or specific device like "cuda:0"
+  
+  # CUDA optimization
+  cuda_benchmark: true
+  cuda_deterministic: false  # Set to true for full reproducibility
+
+# Reproducibility
+random_seed: 42
+
+# Logging and monitoring
+logging:
+  # Log level
+  level: "INFO"
+  
+  # Weights & Biases integration
+  wandb:
+    enabled: false
+    project: "jarir-recsys"
+    entity: null
+    tags: ["two-tower", "retrieval"]
+  
+  # TensorBoard integration  
+  tensorboard:
+    enabled: false
+    log_dir: "logs/retriever"
+  
+  # Console logging
+  console_logging: true
+  rich_progress: true
+
+# Advanced training options
+advanced:
+  # Learning rate warmup
+  warmup:
+    enabled: false
+    warmup_steps: 1000
+    warmup_factor: 0.1
+  
+  # Label smoothing
+  label_smoothing: 0.0
+  
+  # Regularization
+  l2_regularization: 0.0
+  
+  # Batch composition
+  hard_negative_mining: false
+  in_batch_negatives: true
+  
+  # Model averaging
+  exponential_moving_average:
+    enabled: false
+    decay: 0.999
+
+# Hyperparameter search (for automated tuning)
+hyperparameter_search:
+  enabled: false
+  
+  # Search space
+  search_space:
+    d_model: [128, 256, 512]
+    lr: [1e-4, 5e-4, 1e-3]
+    temperature: [0.05, 0.07, 0.1]
+    dropout: [0.1, 0.2, 0.3]
+  
+  # Search method
+  method: "random"  # "random", "grid", "bayesian"
+  n_trials: 20
+  
+  # Optimization objective
+  objective: "val_recall@10"
+  direction: "maximize"

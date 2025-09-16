@@ -1,0 +1,115 @@
+# Data processing configuration for Jarir recommendation system
+
+# Input data paths
+input:
+  # Path to raw Jarir Excel file
+  raw_data_path: "data/raw/jarir.xlsx"
+  
+  # Output directory for processed data
+  output_dir: "data/processed/jarir"
+
+# Data cleaning configuration
+cleaning:
+  # Basic validity filters
+  keep_only_positive_qty: true
+  keep_only_positive_price: true
+  drop_returns_by_prefix: true
+  drop_duplicate_rows: true
+  
+  # Outlier handling
+  handle_outliers: true
+  winsorize_instead_of_drop: false
+  iqr_multiplier: 3.0
+  log_epsilon: 1.0e-6
+  
+  # Coverage filters
+  min_events_per_user: 1
+  min_purchases_per_item: 1
+  
+  # Non-product patterns to filter out (case-insensitive regex)
+  non_product_patterns:
+    - "POSTAGE"
+    - "SHIPPING" 
+    - "CARRIAGE"
+    - "DELIVERY"
+    - "BANK CHARGES"
+    - "AMAZON"
+    - "DOTCOM"
+    - "PACKING"
+    - "ADJUST"
+    - "DISCOUNT"
+    - "SAMPLE"
+    - "SAMPLES"
+    - "CHECK"
+    - "TEST"
+    - "MANUAL"
+    - "FEE"
+    - "CHARGE"
+
+# Sequence generation configuration
+sequences:
+  # Maximum length of user history to consider
+  max_history_length: 15
+  
+  # Minimum history length required for a valid sequence
+  min_history_length: 2
+  
+  # Temporal split quantiles for train/val/test
+  train_split_quantile: 0.80
+  val_split_quantile: 0.90
+  
+  # Random negative sampling (optional)
+  add_random_negatives: false
+  n_negatives_train: 50
+  n_negatives_val: 100
+
+# Feature engineering configuration
+features:
+  # Item popularity normalization
+  popularity_normalization: "min_max"  # "min_max", "z_score", or "none"
+  
+  # Price feature engineering
+  price_features:
+    enabled: true
+    z_score_normalization: true
+    
+  # History aggregation method
+  history_aggregation: "mean"  # "mean", "max", "last", or "attention"
+
+# Data validation
+validation:
+  # Minimum dataset size requirements
+  min_interactions: 1000
+  min_users: 100
+  min_items: 100
+  
+  # Data quality thresholds
+  max_missing_rate: 0.1
+  min_date_coverage_days: 30
+  
+  # Sequence validation
+  min_sequences_per_split: 50
+  max_history_length_variance: 0.5
+
+# Logging and monitoring
+logging:
+  level: "INFO"
+  save_quality_report: true
+  save_statistics: true
+  plot_distributions: false  # Set to true for data exploration
+
+# Reproducibility
+random_seed: 42
+
+# Performance settings
+performance:
+  # Parallel processing
+  n_jobs: -1  # Use all available cores
+  
+  # Memory optimization
+  chunk_size: 10000
+  low_memory: false
+  
+  # I/O settings
+  parquet_engine: "fastparquet"
+  compression: "snappy"

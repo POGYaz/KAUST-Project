@@ -22,6 +22,11 @@ project_root = Path(__file__).parent.parent
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
+# Also add the absolute path to handle different deployment environments
+abs_project_root = project_root.resolve()
+if str(abs_project_root) not in sys.path:
+    sys.path.insert(0, str(abs_project_root))
+
 # Import our modules
 from src.data.features import RankingFeatureBuilder
 from src.utils.io import read_numpy
@@ -635,13 +640,14 @@ def main():
         total_purchases = len(user_purchase_history)
         items_to_show = max(3, int(total_purchases * 0.75))  # Show at least 3, or 75% of total
         items_to_show = min(items_to_show, 9)  # Cap at 9 items (3 rows of 3)
+        items_to_show = min(items_to_show, total_purchases)  # Ensure we don't exceed available items
         
         # Display recent purchases in a responsive grid (dark mode like recommendations)
         for row in range(0, items_to_show, 3):  # Process in rows of 3
             purchase_cols = st.columns(3)
             for col_idx in range(3):
                 i = row + col_idx
-                if i >= items_to_show:
+                if i >= items_to_show or i >= total_purchases:
                     break
                     
                 item = user_purchase_history.iloc[i]

@@ -530,7 +530,7 @@ def main():
         customer_options[f"Customer {customer_id} (${total_spent:.0f})"] = customer_id
     
     # Control inputs
-    col1, col2, col3, col4 = st.columns([3, 1, 2, 1])
+    col1, col2, col3 = st.columns([4, 1, 1])
     
     with col1:
       # Set default to specific customer ID 10018322
@@ -556,15 +556,6 @@ def main():
         )
     
     with col3:
-        available_categories = sorted([clean_category_name(c) for c in data["items"]['category'].dropna().astype(str).unique()])
-        available_categories = list(set([c for c in available_categories if c and c != "General"]))
-        
-        selected_categories = st.multiselect(
-            "Filter Categories",
-            available_categories
-        )
-    
-    with col4:
         get_recs = st.button("Get Recommendations", type="primary")
         if get_recs:
             # Clear any cached data to ensure fresh results
